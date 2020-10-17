@@ -4,13 +4,13 @@ cache:
     - node_modules
     - ~/.npm
 node_js:
-  - '14'
+  - '12'
 git:
   depth: 3
 script:
   - yarn test
 notifications:
-  slack: slack: coding-latam:ef3fTe8Jd6HSmTl8CgXJdZBh
+  slack: coding-latam:ef3fTe8Jd6HSmTl8CgXJdZBh
   email:
     recipients:
       - dsantos0495@gmail.com
