@@ -1,0 +1,27 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+node_js:
+  - '14'
+git:
+  depth: 3
+script:
+  - yarn test
+notifications:
+  slack: slack: coding-latam:ef3fTe8Jd6HSmTl8CgXJdZBh
+  email:
+    recipients:
+      - dsantos0495@gmail.com
+      on_success: always
+      on_failure: always
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  keep_history: true
+  api_key: c5b6fbef-01bd-499a-9139-6069504cf029
+  # nombre que le pusimos en heroku
+  app: platzi-store-backend-m
+  on:
+    repo: DanielSantos495/platzi-store-backend
