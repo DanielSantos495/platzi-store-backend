@@ -22,6 +22,6 @@ deploy:
   keep_history: true
   api_key: c5b6fbef-01bd-499a-9139-6069504cf029
   # nombre que le pusimos en heroku
-  app: platzi-store-backend-m
+  app: platzi-st-back
   on:
     repo: DanielSantos495/platzi-store-backend
